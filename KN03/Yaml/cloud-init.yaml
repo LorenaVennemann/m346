@@ -6,6 +6,7 @@ users:
     home: /home/ubuntu # Verzeichnis des Benutzers
     shell: /bin/bash # Standard-Shell für den Benutzer
     ssh_authorized_keys: # SSH-Schlüssel für den Benutzer
+<<<<<<< HEAD
   AAAAB3NzaC1yc2EAAAADAQABAAABAQC0WGP1EZykEtv5YGC9nMiPFW3U3DmZNzKF
 O5nEu6uozEHh4jLZzPNHSrfFTuQ2GnRDSt+XbOtTLdcj26+iPNiFoFha42aCIzYj
 t6V8Z+SQ9pzF4jPPzxwXfDdkEWylgoNnZ+4MG1lNFqa8aO7F62tX0Yj5khjC0Bs7
@@ -13,6 +14,9 @@ Mb2cHLx1XZaxJV6qSaulDuBbLYe8QUZXkMc7wmob3PM0kflfolR3LE7LResIHWa4
 j4FL6r5cQmFlDU2BDPpKMFMGUfRSFiUtaWBNXFOWHQBC2+uKmuMPYP4vJC9sBgqM
 vPN/X2KyemqdMvdKXnCfrzadHuSSJYEzD64Cve5Zl9yVvY4AqyBD aws-key-Nussle
 
+=======
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0WGP1EZykEtv5YGC9nMiPFW3U3DmZNzKFO5nEu6uozEHh4jLZzPNHSrfFTuQ2GnRDSt+XbOtTLdcj26+iPNiFoFha42aCIzYjt6V8Z+SQ9pzF4jPPzxwXfDdkEWylgoNnZ+4MG1lNFqa8aO7F62tX0Yj5khjC0Bs7Mb2cHLx1XZaxJV6qSaulDuBbLYe8QUZXkMc7wmob3PM0kflfolR3LE7LResIHWa4j4FL6r5cQmFlDU2BDPpKMFMGUfRSFiUtaWBNXFOWHQBC2+uKmuMPYP4vJC9sBgqMvPN/X2KyemqdMvdKXnCfrzadHuSSJYEzD64Cve5Zl9yVvY4AqyBD aws-key-Nussle
+>>>>>>> 23220da6c969b20a9b9f641296e39eeae8d9e109
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDTQRWoS7SNJRhTB5WIKIxbEBvI/CPpCe0yjk/aHAK0xjN4UrZL1gxQMrnEH2fpOJEBbVa0ALHVEWQmL0s19+sh2I5Mw/PrQWM/zwFfhH0cNLT++pq4qM6rZDWJ5xd01hlyy9dzIj7OVhtpp2vMdgwsuTtcc2XwLp6ybaP2S67+12pdT2ZvcRLn5auaTxMgSYszPnpqx5lnzajEAObpewckNxcsKQbpiJptCT2roXTgstZf3p2o0f6Nil6smrJQ0s69Bj2kncHIpGzPAilOB6xSVgAQcYNCvn9wk2KT+gP6+UC4bMVTisLfjfQPikvU/jg4Zh2OxSiZ3z+VxNJj/7d1 aws-key-lorena
 ssh_pwauth: false # SSH-Passwort-Authentifizierung deaktivieren
 disable_root: false # Root-Benutzer deaktivieren
