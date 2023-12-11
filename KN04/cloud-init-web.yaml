@@ -1,0 +1,40 @@
+#cloud-config
+users:
+  - name: ubuntu
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin
+    home: /home/ubuntu
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0WGP1EZykEtv5YGC9nMiPFW3U3DmZNzKFO5nEu6uozEHh4jLZzPNHSrfFTuQ2GnRDSt+XbOtTLdcj26+iPNiFoFha42aCIzYjt6V8Z+SQ9pzF4jPPzxwXfDdkEWylgoNnZ+4MG1lNFqa8aO7F62tX0Yj5khjC0Bs7Mb2cHLx1XZaxJV6qSaulDuBbLYe8QUZXkMc7wmob3PM0kflfolR3LE7LResIHWa4j4FL6r5cQmFlDU2BDPpKMFMGUfRSFiUtaWBNXFOWHQBC2+uKmuMPYP4vJC9sBgqMvPN/X2KyemqdMvdKXnCfrzadHuSSJYEzD64Cve5Zl9yVvY4AqyBD aws-key
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDTQRWoS7SNJRhTB5WIKIxbEBvI/CPpCe0yjk/aHAK0xjN4UrZL1gxQMrnEH2fpOJEBbVa0ALHVEWQmL0s19+sh2I5Mw/PrQWM/zwFfhH0cNLT++pq4qM6rZDWJ5xd01hlyy9dzIj7OVhtpp2vMdgwsuTtcc2XwLp6ybaP2S67+12pdT2ZvcRLn5auaTxMgSYszPnpqx5lnzajEAObpewckNxcsKQbpiJptCT2roXTgstZf3p2o0f6Nil6smrJQ0s69Bj2kncHIpGzPAilOB6xSVgAQcYNCvn9wk2KT+gP6+UC4bMVTisLfjfQPikvU/jg4Zh2OxSiZ3z+VxNJj/7d1 aws-key
+ssh_pwauth: false
+disable_root: false 
+package_update: true
+packages:
+  - apache2
+  - php
+  - libapache2-mod-php
+  - php-mysqli
+
+write_files:
+  - path: /var/www/html/info.php
+    content: |
+      <?php
+      phpinfo();
+      ?>
+    permissions: "0666"
+  - path: /var/www/html/db.php
+    content: |
+      <?php $ihrname = "Lorena vennemann"; ?>
+      <html>
+        <head>
+          <title><?php echo($ihrname) ?></title>
+        </head>
+        <body>
+          Sommerferien 2022
+          <br />
+          <img src="https://vennemann.s3.amazonaws.com/108003488_752621558641085_7702116991804396200_n.jpg" />
+        </body>
+      </html>
+
